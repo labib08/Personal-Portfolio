@@ -56,14 +56,14 @@
 
 
 @media screen and (max-width: 1024px) {
-  .portfolio_container {
+  .projects_container {
     grid-template-columns: 1fr 1fr;
     gap: 19.2px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .portfolio_container {
+  .projects_container {
     grid-template-columns: 1fr;
     gap: 16px;
   }
