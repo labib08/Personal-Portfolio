@@ -83,7 +83,7 @@ const Banner = () => {
 
                     <Col xs = {12} md = {6} xl = {7}>
 
-                        <h1> {"Itmam Khan Labib "}  </h1>
+                        <h1> <span>{"Itmam Khan Labib "} </span></h1>
                         <h2>
                         <span>{text}</span>
                         <span id = "underscore" >_</span>

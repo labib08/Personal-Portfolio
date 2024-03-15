@@ -51,17 +51,35 @@ const Projects = () => {
           GitHub: "https://github.com/labib08/Autocomplete-Lookup",
         },
       ];
+      const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
     return (
         <section className = 'projects'id = "projects">
 
             <h2 style={{marginTop: '80px'}}>Projects</h2>
             <p>These are the projects that I worked on over the couple of years</p>
-            <div className='container projects_container'>
+            <div responsive = {responsive} className='container projects_container'>
                 {
                     projects.map(({index, title, description, imgUrl, GitHub}) => {
                         return (
                             <article key = {index} className='projects_item'>
-                                <div className='projects_item-image'>
+                                <div  className='projects_item-image'>
                                     <img src={imgUrl} alt = {title} style={{ width: '300px', height: '200px', borderRadius: '24px' }}/>
                                 </div>
                                 <h3>{title}</h3>

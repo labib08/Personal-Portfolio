@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import navIcon2 from '../assets/img/facebook.svg';
-import navIcon4 from '../assets/img/github.svg';
+import facebook from '../assets/img/facebook.svg';
+import github from '../assets/img/github.svg';
 import logo from '../assets/img/github_dp.png';
-import navIcon3 from '../assets/img/insta.svg';
-import navIcon1 from '../assets/img/link_icon.svg';
-
+import insta from '../assets/img/insta.svg';
+import linkedin from '../assets/img/link_icon.svg';
+import navbar from '../assets/img/navbar.svg';
 const NavBar = () => {
 
     const[activeLink, setActiveLink] = useState('home');
@@ -39,8 +39,9 @@ const NavBar = () => {
                     <img src = {logo} className="gitHub-dp" alt = "Logo"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <span className = "navbar-toggle-icon"></span>
-                </Navbar.Toggle>
+    <img src={navbar} alt="Navbar" className="navbar-toggle-icon" />
+</Navbar.Toggle>
+
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick = {() => onUpdateActiveLink('home')}>Home</Nav.Link>
@@ -50,10 +51,10 @@ const NavBar = () => {
                 </Nav>
                 <span className = "navbar-text">
                     <div className = "social-icon">
-                        <a href = "https://www.linkedin.com/in/itmam-khan-labib-033a9a221" target="_blank" rel="noopener noreferrer"><img src = {navIcon1} alt = ""/> </a>
-                        <a href = "https://www.facebook.com/labib.itmam" target="_blank" rel="noopener noreferrer"><img src = {navIcon2} alt = ""/> </a>
-                        <a href = "https://www.instagram.com/labib_08" target="_blank" rel="noopener noreferrer"><img src = {navIcon3} alt = ""/> </a>
-                        <a href = "https://www.github.com/labib08" target="_blank" rel="noopener noreferrer"><img src = {navIcon4} alt = ""/> </a>
+                        <a href = "https://www.linkedin.com/in/itmam-khan-labib-033a9a221" target="_blank" rel="noopener noreferrer"><img src = {linkedin} alt = ""/> </a>
+                        <a href = "https://www.facebook.com/labib.itmam" target="_blank" rel="noopener noreferrer"><img src = {facebook} alt = ""/> </a>
+                        <a href = "https://www.instagram.com/labib_08" target="_blank" rel="noopener noreferrer"><img src = {insta} alt = ""/> </a>
+                        <a href = "https://www.github.com/labib08" target="_blank" rel="noopener noreferrer"><img src = {github} alt = ""/> </a>
                     </div>
 
                 </span>
