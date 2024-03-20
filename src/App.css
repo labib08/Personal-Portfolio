@@ -345,16 +345,16 @@ nav.navbar {
   }
 }
 
-.banner {
+.homePage {
   margin-top: 0;
   padding: 260px 0 100px 0;
-
+  height: 800px;
   background-position: top center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.banner h1 {
+.homePage h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -379,17 +379,17 @@ nav.navbar {
 }
 
 
-.banner h2 {
+.homePage h2 {
   margin-bottom: 20px;
 }
-.banner p {
+.homePage p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.homePage button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -398,25 +398,25 @@ nav.navbar {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.homePage button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.homePage button:hover svg {
   transition: all 0.4s ease 0s;
 
 }
-.banner .location-logo {
+.homePage .location-logo {
   height: 22px;
   width: 20px;
   padding:2px;
 }
-.banner .loc-time-email-logo {
+.homePage .loc-time-email-logo {
   margin-bottom: 20px;
 }
-.banner button {
+.homePage button {
   font-weight: 700;
   color: #000000;
   background-color: #555454;
@@ -427,14 +427,14 @@ nav.navbar {
   position: relative;
   transition: 0.3s ease-in-out;
 }
-.banner button span {
+.homePage button span {
   z-index: 1;
   position: relative;
 }
-.banner button:hover {
+.homePage button:hover {
   color: #fff;
 }
-.banner button::before {
+.homePage button::before {
   content: "";
   background: #121212;
   width: 0;
@@ -445,7 +445,7 @@ nav.navbar {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
-.banner button:hover::before {
+.homePage button:hover::before {
   width: 100%;
 }
 .txt-rotate > .wrap {

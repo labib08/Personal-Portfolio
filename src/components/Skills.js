@@ -34,7 +34,7 @@ const Skills = () => {
                                 Technical Skills
                             </h2>
                             <p>
-                                Hi I am this. This is my skills, I do this and this. Very proficient at this.
+                                These are the Programming skills that I have acquired over the years.
                             </p>
                             <Carousel responsive = {responsive} infinite = {true} className = "skill-slider">
                                 <div className = "item">

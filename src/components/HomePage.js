@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import emailImg from "../assets/img/email-svgrepo-com.svg";
 import timeImg from "../assets/img/iconmonstr-clock-thin.svg";
 import locationImg from "../assets/img/location-pin-svgrepo-com.svg";
-const Banner = () => {
+const HomePage = () => {
 
     const date = new Date();
     let hours = date.getHours();
@@ -28,6 +28,32 @@ const Banner = () => {
     const [text, setText] = useState('');
     const [timeGap, setTimeGap] = useState(50);
     const time = 1000;
+
+    const [melbourneTime, setMelbourneTime] = useState('');
+
+    useEffect(() => {
+        const getTime = () => {
+        const melbDate = new Date().toLocaleString('en-US', { timeZone: 'Australia/Melbourne'});
+
+        let melbHours = date.getHours();
+        const melbMinutes = date.getMinutes();
+        const melbSeconds = date.getSeconds();
+
+        const melbAmPm = melbHours >= 12 ? 'PM' : 'AM';
+        melbHours = melbHours % 12 || 12;
+
+        const melbFormattedHours = melbHours < 10 ? '0' + melbHours : melbHours;
+        const melbFormattedMinutes = melbMinutes < 10 ? '0' + melbMinutes : melbMinutes;
+
+        const melbShowTime = melbFormattedHours + ':' + melbFormattedMinutes + ' ' + melbAmPm;
+
+        setMelbourneTime(melbShowTime);
+        };
+
+        const interval = setInterval(getTime, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     useEffect(() => {
         let helper_func = setInterval(() => {
@@ -73,7 +99,7 @@ const Banner = () => {
     }, [isVisible]);
 
     return (
-        <section className = "banner" id = "home">
+        <section className = "homePage" id = "home">
 
             <Container>
 
@@ -91,7 +117,7 @@ const Banner = () => {
                         <p><span><img src = {timeImg} className='location-logo' alt = ""/>   {showTime}</span></p>
                         <p><span><img src = {emailImg} className='location-logo' alt = ""/>   iklabib49@gmail.com</span></p>
                         </div>
-                        <p>Hi I am this this this, I do this this this, please insert text, or dont, idk lol man. <br/>I'm just tryna live womp womp</p>
+                        <p>Hi I am currently studying Computer Science at the University of Melbourne. <br/>My interests lie in watching Cricket and Football. I have an obsession <br/>for wrist watches. </p>
 
                     </Col>
 
@@ -101,4 +127,4 @@ const Banner = () => {
     )
 }
 
-export default Banner;
+export default HomePage;

@@ -38,7 +38,7 @@ const Experience = () => {
                                 Experience
                             </h2>
                             <p>
-                                Hi I am this. This is my skills, I do this and this. Very proficient at this.
+                                These are the places that I have worked on till now.
                             </p>
                             <Carousel responsive = {responsive} infinite = {true} className = "skill-slider">
                             <div className = "item">

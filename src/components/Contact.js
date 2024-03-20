@@ -1,4 +1,4 @@
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import dragonImg from "../assets/img/dragoncraft-png-5690494.svg";
@@ -11,19 +11,19 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-        .sendForm('service_voh00p9', 'template_sikhz16', form.current, {
-            publicKey: 'PCmsk9qLHzewZjzRt',
-        })
-        .then(
+          .sendForm('service_daa66at', 'template_6dnr99y', form.current, {
+            publicKey: 'Vp9kaW7zSSMf3yW_r',
+          })
+          .then(
             () => {
-            console.log('SUCCESS!');
+              console.log('SUCCESS!');
             },
             (error) => {
-            console.log('FAILED...', error.text);
+              console.log('FAILED...', error.text);
             },
-        );
-        e.target.reset();
-    };
+          );
+          e.target.reset();
+      };
 
     const formInitialDetails = {
         firstName: '',
@@ -49,7 +49,7 @@ const Contact = () => {
             <Container>
                 <Row className = "align-items-center">
                     <Col size = {12} md = {6} >
-                        <h2>Get In Touch</h2>
+                        <h2>Contact</h2>
                         <form ref = {form}  onSubmit={sendEmail}>
                             <Row>
                                 <Col sm = {6} className = "px-1">

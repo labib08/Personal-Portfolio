@@ -10,18 +10,20 @@ const Projects = () => {
     const projects = [
         {
           index: 0,
-          title: "ShadowPac",
-          description: "This game is an imitation of the original 80’s arcade game Pac-Man. The game was developed using a game engine library using Java Programming language.",
-          imgUrl: shadowPac,
-          GitHub: "https://github.com/labib08/ShadowPac",
-        },
-        {
-          index: 1,
           title: "Mewtify",
           description: "This code is an imitation of the digital music streaming service Spotify. This music service contains 5 of the songs that are most streamed on Spotify, and 1 song that is not on Spotify.",
           imgUrl: mewtify,
           GitHub: "https://github.com/labib08/Mewtify",
         },
+
+        {
+          index: 1,
+          title: "ShadowPac",
+          description: "This game is an imitation of the original 80’s arcade game Pac-Man. The game was developed using a game engine library using Java Programming language.",
+          imgUrl: shadowPac,
+          GitHub: "https://github.com/labib08/ShadowPac",
+        },
+
         {
           index: 2,
           title: "Search Dictionary",
