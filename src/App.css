@@ -1,6 +1,8 @@
 .projects {
   text-align: center;
   position: relative;
+  background: #000000;
+  padding-top: 3px;
 }
 .projects_container {
   display: grid;
@@ -143,6 +145,13 @@ input:focus, textarea:focus, select:focus {
 		max-width: 100%;
 		padding: 0 150px;
 	}
+}
+
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 p.success {
@@ -339,29 +348,19 @@ nav.navbar {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  height:850px;
-  background-image: url('./assets/img/robot.jpeg');
+
   background-position: top center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
-  display: block;
+  display: inline-block;
 }
 @keyframes fadeInOut {
   0% {
@@ -478,6 +477,15 @@ nav.navbar {
 .skill .work_name:hover {
   cursor: pointer;
   transition: all 0.4s ease 0s;
+}
+@media (min-width:1700px) {
+	.skill-bx {
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 6000px 50px;
+    margin-top: -60px;
+  }
 }
 
 .skill-bx {

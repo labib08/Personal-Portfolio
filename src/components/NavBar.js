@@ -39,8 +39,8 @@ const NavBar = () => {
                     <img src = {logo} className="gitHub-dp" alt = "Logo"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-    <img src={navbar} alt="Navbar" className="navbar-toggle-icon" />
-</Navbar.Toggle>
+                    <img src={navbar} alt="Navbar" className="navbar-toggle-icon" />
+                </Navbar.Toggle>
 
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">

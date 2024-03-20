@@ -75,7 +75,7 @@ const Projects = () => {
             <h2 style={{marginTop: '80px'}}>Projects</h2>
             <p>These are the projects that I worked on over the couple of years</p>
             <div responsive = {responsive} className='container projects_container'>
-                {
+                 {
                     projects.map(({index, title, description, imgUrl, GitHub}) => {
                         return (
                             <article key = {index} className='projects_item'>

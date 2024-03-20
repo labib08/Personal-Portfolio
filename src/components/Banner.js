@@ -5,12 +5,8 @@ import Row from "react-bootstrap/Row";
 import emailImg from "../assets/img/email-svgrepo-com.svg";
 import timeImg from "../assets/img/iconmonstr-clock-thin.svg";
 import locationImg from "../assets/img/location-pin-svgrepo-com.svg";
-
 const Banner = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const handleClick = () => {
-        console.log("Let's connect");
-    };
+
     const date = new Date();
     let hours = date.getHours();
     const minutes = date.getMinutes();
@@ -78,12 +74,14 @@ const Banner = () => {
 
     return (
         <section className = "banner" id = "home">
+
             <Container>
+
                 <Row className = "align-items-center">
 
-                    <Col xs = {12} md = {6} xl = {7}>
+                    <Col >
 
-                        <h1> <span>{"Itmam Khan Labib "} </span></h1>
+                        <h1> <span>Itmam Khan Labib </span></h1>
                         <h2>
                         <span>{text}</span>
                         <span id = "underscore" >_</span>
@@ -93,7 +91,7 @@ const Banner = () => {
                         <p><span><img src = {timeImg} className='location-logo' alt = ""/>   {showTime}</span></p>
                         <p><span><img src = {emailImg} className='location-logo' alt = ""/>   iklabib49@gmail.com</span></p>
                         </div>
-                        <p>Hi I am this this this, I do this this this, please insert text, or dont, idk lol man. I'm just tryna live womp womp</p>
+                        <p>Hi I am this this this, I do this this this, please insert text, or dont, idk lol man. <br/>I'm just tryna live womp womp</p>
 
                     </Col>
 
