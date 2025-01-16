@@ -42,27 +42,27 @@ const Experience = () => {
                             </p>
                             <Carousel responsive = {responsive} infinite = {true} className = "skill-slider">
                             <div className = "item">
-                                    <img src = {urt} alt = "Image" className='work_logo'/>
+                                    <img src = {urt} alt = "" className='work_logo'/>
                                     <h5 className='work_name'>Unimelb Rover Team</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {msp} alt = "Image" className='work_logo'/>
+                                    <img src = {msp} alt = "" className='work_logo'/>
                                     <h5 className='work_name'>Melbourne Space Program</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {misc} alt = "Image" className='work_logo' />
+                                    <img src = {misc} alt = "" className='work_logo' />
                                     <h5 className='work_name'>MISC</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {wehi} alt = "Image" className='work_logo'/>
+                                    <img src = {wehi} alt = "" className='work_logo'/>
                                     <h5 className='work_name'>WEHI</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {think_tank} alt = "Image" className='work_logo'/>
+                                    <img src = {think_tank} alt = "" className='work_logo'/>
                                     <h5 className='work_name'>Think Tank</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {unimelb} alt = "Image" className='work_logo'/>
+                                    <img src = {unimelb} alt = "" className='work_logo'/>
                                     <h5 className='work_name'>University of Melbourne</h5>
                                 </div>
 

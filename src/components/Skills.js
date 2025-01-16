@@ -38,27 +38,27 @@ const Skills = () => {
                             </p>
                             <Carousel responsive = {responsive} infinite = {true} className = "skill-slider">
                                 <div className = "item">
-                                    <img src = {meter1} alt = "Image" />
+                                    <img src = {meter1} alt = "" />
                                     <h5>C++</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter2} alt = "Image" />
+                                    <img src = {meter2} alt = "" />
                                     <h5>Python</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter3} alt = "Image" />
+                                    <img src = {meter3} alt = "" />
                                     <h5>Java</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter2} alt = "Image" />
+                                    <img src = {meter2} alt = "" />
                                     <h5>ReactJS</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter1} alt = "Image" />
+                                    <img src = {meter1} alt = "" />
                                     <h5>MySQL</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter2} alt = "Image" />
+                                    <img src = {meter2} alt = "" />
                                     <h5>Vanilla JavaScript</h5>
                                 </div>
                             </Carousel>

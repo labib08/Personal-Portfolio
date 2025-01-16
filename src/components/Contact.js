@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import dragonImg from "../assets/img/dragoncraft-png-5690494.svg";
 
@@ -25,24 +25,7 @@ const Contact = () => {
           e.target.reset();
       };
 
-    const formInitialDetails = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-    }
-
-    const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtonText] = useState('Send');
-    const [status, setStatus] = useState({});
-
-    const onFormUpdate = (category, value) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value
-        })
-    }
+    const buttonText = 'Send';
 
     return (
         <section className = "contact" id = "contact">
@@ -75,7 +58,7 @@ const Contact = () => {
                         </form>
                     </Col>
                     <Col size = {12} md = {6}>
-                        <img  src={dragonImg}/>
+                        <img  src={dragonImg} alt =""/>
                     </Col>
                 </Row>
             </Container>
