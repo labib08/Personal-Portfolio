@@ -14,6 +14,7 @@ This is my personal portfolio website, built to showcase my professional experie
 
 # Getting Started
 Follow these steps to run the project locally:
+
 **1. Clone the Repository:**
 ```
 git clone https://github.com/labib08/Personal-Portfolio.git
